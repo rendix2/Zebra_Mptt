@@ -1,3 +1,18 @@
+## version 2.3.7 (February 12, 2020)
+
+- fixed [#11](https://github.com/stefangabos/Zebra_Mptt/issues/11) where `moving` root nodes and using the `before` / `after` arguments would yield warnings. Thanks [@xVinniVx](https://github.com/xVinniVx)!
+
+## version 2.3.6 (January 08, 2019)
+
+- added `show_full_path` argument to the [to_select](https://stefangabos.github.io/Zebra_Mptt/Zebra_Mptt/Zebra_Mptt.html#methodto_select) method; thanks to **Jiri Melcak** for suggesting
+- the library will now stop on MySQL errors; previously, because it uses TABLE LOCKs, errors while in a lock would not be reported, making it difficult to debug; thanks to **Jiri Melcak** for suggesting!
+
+## version 2.3.5 (July 06, 2018)
+
+- fixed [#5](https://github.com/stefangabos/Zebra_Mptt/issues/5) where `get_previous_sibling` was in fact returning the `next` sibling. Thanks [@kinnevo](https://github.com/kinnevo)!
+- performance tweaks for `get_previous_sibling` and `get_next_sibling` methods
+- escape custom table and column names; thanks [@dominikfiala](https://github.com/dominikfiala)!
+
 ## version 2.3.4 (May 20, 2017)
 
 - unnecessary files are no more included when downloading from GitHub or via Composer
